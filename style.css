@@ -21,23 +21,39 @@ body {
 	}
 }
 
-
-#content {
+#titlecard {
     display: grid;
     place-items:  center;
     align-content: center;
     min-height: 100vh;
 }
-
-#head {
-    background: #ffffffb9;
+#white {
+    background: #fffffff1;
     color: #121214;
-    padding: 50;
-    margin: 150;
+    padding: 7%;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+}
+.twitter-timeline {
+    width: 300px;
+    margin-left: auto; 
 }
 
-#current {
-    background: #ffffffb9;
+.left, .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%; 
+}
+
+#head {
+    background: #fffffff1;
     color: #121214;
-    padding: 150;
+    padding: 50%;
+    margin: 10%;
+}
+
+#imgHead {
+    float: left;
+    padding: 0;
+    margin: 10%;
 }
