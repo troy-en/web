@@ -1,0 +1,63 @@
+body {
+  background: linear-gradient(-155deg, #121214, #131325, #1a111a, #241624);
+  background-size: 1000% 1000%;
+  animation: gradient 15s ease infinite;
+
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
+#head {
+  background: #fffffff1;
+  color: #121214;
+  padding: 50%;
+  margin: 10%;
+}
+
+#topbarcode {
+    background: #fffffff1;
+    color: #121214;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+#white {
+    background: #fffffff1;
+    color: #121214;
+    padding: 7%;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+}
+
+.left, .right {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%; 
+}
+
+
+#blank {
+  font: large;
+  color: #ffffff;
+  padding: 10%;
+  padding-bottom: 1%;
+  box-sizing: border-box;
+}
+
+
+
+
