@@ -9,6 +9,43 @@ body {
     margin: 0;
 }
 
+.small-steam-embed{
+    display: none;
+}
+.tiny-steam-embed{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .left, .right {
+        display: inline  !important;
+        vertical-align: top  !important;
+        width: 50%  !important; 
+    }
+    .twitter-timeline {
+        display: none !important;
+    }
+    .steam-embed{
+        display: none !important;
+    }
+    .small-steam-embed{
+        display: inline !important;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    .tiny-screen{
+        display: none  !important;
+    }
+    .small-steam-embed{
+        display: none !important;
+    }
+    .tiny-steam-embed{
+        display: inline !important;
+    }
+}
+
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -30,7 +67,10 @@ body {
 #white {
     background: #fffffff1;
     color: #121214;
-    padding: 7%;
+    padding-right: 7%;
+    padding-left: 10%;
+    padding-top: 4%;
+    padding-bottom: 3%;
     box-sizing: border-box;
 }
 .twitter-timeline {
