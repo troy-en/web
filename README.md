@@ -1,1 +1,1 @@
-Im just using github pages for free hosting
+dont judge the code to hard- i never use html
