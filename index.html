@@ -1,238 +1,102 @@
-<!-- Thanks to https://mubi.tech/ for making this site! very epic thanks mubilop!-->
+<!-- l-l.dev is my personal page (troy_en) for contact info and general project info.   TROY EN LTD (C) 2024-->
+
+<!-- WARNING I BARLEY EVER USE HTML SO THINGS WILL PROBABBLY NOT BE THE BEST CODED 
+the hero design was inspired by blursoulx's y2k codepen!  -->
+
 
 <!DOCTYPE html>
 <html data-bs-theme="dark" lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>troy_en</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel = "icon" href="favicon.png">
-  <style>
-    .container {
-      opacity: 1;
-    }
-    
-    .title-text {
-      font-size: 5rem;
-      color: white;
-      font-family: Consolas, Arial;
-    }
-    .print-gray {
-      color: #808080; /* Gray color */
-    }
-    .contact-info {
-      color: white;
-      font-size: 1.2rem;
-    }
-    .project-box {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .space {
-      height: 20px; /* Adjust the height as needed */
-      width: 100%; /* Or adjust the width as needed */
-    }
-    .hovercard {
-      transition: transform 0.1s ease-out; /* Curl out animation */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Aura effect */
-    }
-    .hovercard:hover {
-      transform: scale(1.05); /* Scale up on hover */
-    }
-    .right-picture{
-        white-space: nowrap;
-        overflow: hidden;
-        font-family: 'DejaVu Sans Mono', monospace;
-        float: right;
-        margin-right: 100px;
-        line-height: 1.0rem;
-        color: #262D33;
-        font-size: 2.2rem;
-        letter-spacing: 0.2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png">
 </head>
+
 <body>
-
-<div class="container">
-  <div class="title-text">
-    <span class="print-gray">print("</span>
-    <span id="helloText">Hello</span>
-    <span class="print-gray">")</span>
-  </div>
-</div>
-
-<div class="container mt-5">
-  <div class="right-picture"><p>█ │█│ ███  █│██ │ █│<br>█ │█│ ███  █│██ │ █│<br>█ │█│ ███  █│██ │ █│<br>█ │█│ ███  █│██ │ █│<br>█ │█│ ███  █│██ │ █│<br><br>- •-• --- -•-- - •-<br><br><br>t  r   o   y   e  n <br><br><br>- •-• --- -•-- - •-</p><br>█ │█│ ███  █│██ │ █│<br>█ │█│ ███  █│██ │ █│<br>█ │█│ ███  █│██ │ █│<br>█ │█│ ███  █│██ │ █│<br>█ │█│ ███  █│██ │ █│</div>
-  <h2>My name is <strong>troy_en</strong>.</h2>
-  <p>This is my Website! I am an indie game developer and creator of <a href="http://www.kinitopet.com/">KinitoPET</a>.</p>
-  <p class="contact-info">Info:</p>
-  
-  <ul class="contact-info">
-    <li>Email:   <a href="mailto:troyenemail@gmail.com">troyenemail@gmail.com</a></li>
-    <li>Discord: <a href="https://discord.gg/kinitopet">@tr_y</a></li>
-    <li>Twitter: <a href="https://twitter.com/troy_en">@troy_en</a></li>
-    <li>YouTube: <a href="https://www.youtube.com/@troy_en">@troy_en</a></li>
-    <li>Patreon: <a href="https://www.patreon.com/troy_en">@troy_en</a></li>
-    <li>Spotify: <a href="https://open.spotify.com/artist/7ywjWmkPfDKg9WvUXLPkhe">@troy_en</a></li>
-  </ul>
-  
-  <h1>Projects</h1>
-  <div class="space"></div>
-  <div class="row row-cols-1 row-cols-md-2 g-4" id="projectContainer"></div>
-  <hr>
-  <p class="contact-info">█ │█│ █ █ █  █│█ █ │ █│ </p><p>troy_en 2024 - KinitoPET - TROY EN LTD - page by <a href="https://mubi.tech/">MubiLop</a></p>
-</div>
-
-
-<!-- For more texts in print("") go to const textArray :D -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-  const helloText = document.getElementById('helloText');
-  const textArray = ['Hello', 'World'];
-  let index = 0;
-  let subIndex = 0;
-  let isDeleting = false;
-
-  function animateText() {
-    const currentText = textArray[index];
     
-    if (!isDeleting && subIndex <= currentText.length) {
-      helloText.textContent = currentText.substring(0, subIndex);
-      subIndex++;
-      setTimeout(animateText, 200); // Speed of writing animation
-    } else if (isDeleting && subIndex >= 0) {
-      helloText.textContent = currentText.substring(0, subIndex);
-      subIndex--;
-      setTimeout(animateText, 50); // Speed of deleting animation
-    } else if (!isDeleting && subIndex > currentText.length) {
-      isDeleting = true;
-      setTimeout(animateText, 1000); // Delay before starting deletion
-    } else {
-      isDeleting = false;
-      index = (index + 1) % textArray.length;
-      subIndex = 0;
-      setTimeout(animateText, 200); // Delay before starting next text
-    }
-  }
+    <!-- HERO CODE -->
+    <div class="hero">
+        <div class="centre"><div class="clouds" style="opacity: 0.7;    animation: cloud_scroll 5000s linear infinite; "></div></div>
+        <div class="centre"><div class="clouds" style="opacity: 0.4;    animation: cloud_scroll 3000s linear infinite; "></div></div>
+        <div class="centre"><div class="clouds" style="opacity: 0.3;    animation: cloud_scroll 1500s linear infinite; "></div></div>
+        
+        <div class="layer2"><img src="content/haze.png" draggable="false" style="scale: 55%;" class="centre"></div>
+        <div class="layer1"><img src="content/troys_world_exe.png" draggable="false" style="image-rendering:crisp-edges;scale: 50%;" class="centre"></div>
+        <div class="layer3" style="z-index: 10;"><img src="content/tab.png" draggable="false" class="centre">
 
-  animateText(); // Start the animation
+            <div class="hero-text">
+                <p>
+                    <pre style="font-family:'', monospace; font-size: 1.5vh; text-shadow: 0px 0px 6px white,0px 0px 6px white,0px 0px 6px white,0px 0px 6px;">
+ ___       __   _______   ___       ________  ________  _____ ______   _______                  
+|\  \     |\  \|\  ___ \ |\  \     |\   ____\|\   __  \|\   _ \  _   \|\  ___ \                 
+\ \  \    \ \  \ \   __/|\ \  \    \ \  \___|\ \  \|\  \ \  \\\__\ \  \ \   __/|                
+ \ \  \  __\ \  \ \  \_|/_\ \  \    \ \  \    \ \  \\\  \ \  \\|__| \  \ \  \_|/__              
+  \ \  \|\__\_\  \ \  \_|\ \ \  \____\ \  \____\ \  \\\  \ \  \    \ \  \ \  \_|\ \ ___ ___ ___ 
+   \ \____________\ \_______\ \_______\ \_______\ \_______\ \__\    \ \__\ \_______\\__\\__\\__\
+    \|____________|\|_______|\|_______|\|_______|\|_______|\|__|     \|__|\|_______\|__\|__\|__|
+                     </pre>
+                </p>
+                <p>My name is <b style="font-family: serif; color:white; font-size: 3.5vh; text-shadow: 0px 0px 10px black,0px 0px 6px black,0px 0px 10px black,0px 0px 10px;">troy_en</b> I am an indie game developer trying<br> to make stuff that I have an interest in.<br><br>If you need to contact me, please do so via my email:
+                <br><a href="mailto:troyenemail@gmail.com" target="_blank">&lt;troyenemail@gmail.com&gt;</a></p>
+                <br>
+                <b>My accounts:</b><br>
+                email:   <a href="mailto:troyenemail@gmail.com" target="_blank">troyenemail@gmail.com</a><br>
+                discord: <a href="https://discord.gg/kinitopet" target="_blank">@tr_y</a><br>
+                twitter: <a href="https://twitter.com/troy_en" target="_blank">@troy_en</a><br>
+                youTube: <a href="https://www.youtube.com/@troy_en" target="_blank">@troy_en</a><br>
+                patreon: <a href="https://www.patreon.com/troy_en" target="_blank">@troy_en</a><br>
+                spotify: <a href="https://open.spotify.com/artist/7ywjWmkPfDKg9WvUXLPkhe" target="_blank">@troy_en</a><br>
+                reddit: <a href="https://www.reddit.com/u/troy_en" target="_blank">@troy_en</a><br>
 
-  // Konami Code Detection
-  const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-  let konamiIndex = 0;
+            </div>
+        </div>
+        <img src="content/hero.png" draggable="false" style="z-index: 5;" class="centre"> 
 
-  document.addEventListener('keydown', function (event) {
-    if (event.key === konamiCode[konamiIndex]) {
-      konamiIndex++;
-      if (konamiIndex === konamiCode.length) {
-        // Konami code entered, redirect to another website
-        window.location.href = 'https://youtu.be/DrP8jnW1MH0?si=Alj_yE5HAdTquxOa&t=16'; 
-        konamiIndex = 0; // Reset index for next use
-      }
-    } else {
-      konamiIndex = 0; // Reset index if key does not match
-    }
-  });
+    </div>
 
-  // Projects data array
-  const projects = [
-    {"name":"KinitoPET","description":"a 2000s desktop virtual assistant horror game","imageUrl":"https://cdn.cloudflare.steamstatic.com/steam/apps/2075070/header.jpg?t=1707340597","buttons":[{"text":"Go to Steam Page","link":"https://store.steampowered.com/agecheck/app/2075070/","icon":"bi-steam"}]},
+    <div class="sperator"> 
+        <img src="content/sperator.jpg" draggable="false">
+    </div>
 
-  ];
+    <!-- PROJECT CODE -->
+    <div class="projects">
+            <pre style="font-family:'', monospace; font-size: 1.5vh; text-shadow: 0px 0px 6px rgb(255, 196, 240),0px 0px 6px rgb(255, 196, 240),0px 0px 6px rgb(255, 196, 240),0px 0px 6px;">
+    __ __ _       _ __        ____  ____________ 
+   / //_/(_)___  (_) /_____  / __ \/ ____/_  __/ 
+  / ,<  / / __ \/ / __/ __ \/ /_/ / __/   / / (_)
+ / /| |/ / / / / / /_/ /_/ / ____/ /___  / / _   
+/_/ |_/_/_/ /_/_/\__/\____/_/   /_____/ /_/ (_)  
+            </pre>
+        <div class="project-box">
+            <div class="auto-resizable-iframe"><iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/6C2O1rzhKls"></iframe></div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="project-box">
 
-  // Function to create project boxes
-  function createProjectBox(project) {
-    const container = document.createElement('div');
-    container.classList.add('col-lg-4', 'col-md-6', 'mb-4');
-    
-    const card = document.createElement('div');
-    card.classList.add('card', 'h-100');
-    card.classList.add('hovercard');
-    
-    const image = document.createElement('img');
-    image.src = project.imageUrl;
-    image.classList.add('card-img-top');
-    
-    const cardBody = document.createElement('div');
-    cardBody.classList.add('card-body');
-    
-    const title = document.createElement('h4');
-    title.classList.add('card-title');
-    title.textContent = project.name;
-    
-    const description = document.createElement('p');
-    description.classList.add('card-text');
-    description.textContent = project.description;
-    
-    const buttonsContainer = document.createElement('div');
-    buttonsContainer.classList.add('d-grid', 'gap-2');
-    project.buttons.forEach(button => {
-      const buttonElement = document.createElement('a');
-      buttonElement.classList.add('btn', 'btn-sm');
-      if (button.type) {
-        buttonElement.classList.add(`btn-${button.type}`);
-      } else {
-        buttonElement.classList.add('btn-primary');
-      }
-      if (button.icon) {
-        const icon = document.createElement('i');
-        icon.classList.add(button.icon);
-        buttonElement.appendChild(icon);
-        buttonElement.appendChild(document.createTextNode(' ' + button.text)); // Append text after icon
-      } else {
-        buttonElement.textContent = button.text; // Set text if no icon
-      }
-      buttonElement.href = button.link;
-      buttonsContainer.appendChild(buttonElement);
-    });
-    
-    cardBody.appendChild(title);
-    cardBody.appendChild(description);
-    cardBody.appendChild(buttonsContainer);
-    
-    card.appendChild(image);
-    card.appendChild(cardBody);
-    
-    container.appendChild(card);
-    
-    document.getElementById('projectContainer').appendChild(container);
-  }
+            <p>KinitoPET is a psychological horror experience that takes place through Kinito, a virtual assistant reminiscent of the early 2000’s. I developed the project alone using godot (v3.3.3) and well- I am honestly really surprised with how well it did with it being my first commercial game and all. You can read more about the inner workings of the game via my patreon (it's free!)</p>
+            <div class="project">
+                <img src="content/SteamImageLowerRes.png" width="25%" >
+                <iframe src="https://store.steampowered.com/widget/2075070/" frameborder="0" width="80%" height="190"></iframe>
+            </div>
+                <p style="text-align: center;"><a href="https://www.kinitopet.com" target="_blank">&lt;get_the_game&gt;</a> 
+                    <a href="https://twitter.com/kinitopet" target="_blank">&lt;twitter&gt;</a>
+                    <a href="https://store.steampowered.com/app/2075070/KinitoPET/" target="_blank">&lt;kinitopet.com&gt;</a>  
+                    <a href="https://www.youtube.com/watch?v=5JqENaHTtg8&list=PL9on8fJN3liKqSla5l1NXLh-legAE1bpn" target="_blank">&lt;youtube&gt;</a>
+                    <a href="https://open.spotify.com/album/3pVgKhaRe2ZR8gpBSXPmvR" target="_blank">&lt;spotify&gt;</a>
+                </p>
+        </div>
+    </div>
 
-  // Create project boxes
-  projects.forEach(project => createProjectBox(project));
 
-  // Function to fade in elements with a slight offset
-  function fadeInElements() {
-    const elements = document.querySelectorAll('.container > *, .project-box');
-    elements.forEach((element, index) => {
-      element.style.opacity = '0'; // Start with opacity 0
-      element.style.transition = 'opacity 0.5s ease-in-out'; // Apply transition
-    });
-
-    elements.forEach((element, index) => {
-      // Calculate delay based on index for offset effect
-      const delay = (index + 1) * 200;
-      setTimeout(() => {
-        element.style.opacity = '1'; // Activate fade in
-      }, delay);
-    });
-  }
-
-  // Call the fadeInElements function after the document has loaded
-  document.addEventListener('DOMContentLoaded', function () {
-    fadeInElements();
-  });
-
-  // Bro this have so many code inside lol :skull:
-</script>
-
+    <!-- FOOTER -->
+    <br><br><br><br>
+    <div class="sperator"> 
+        <img src="content/sperator.jpg" draggable="false">
+    </div>
+    <!--  -->
+    <script src="script.js"></script> 
 </body>
 </html>

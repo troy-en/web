@@ -1,0 +1,174 @@
+a:link {
+    color: rgba(211, 211, 211, 0.726);
+  
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:visited {
+color: rgb(122, 122, 122);
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover {
+color: rgb(255, 255, 255);
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active {
+color: rgb(201, 201, 201);
+background-color: transparent;
+text-decoration: underline;
+}
+
+
+body {
+    background-color: rgb(32, 32, 32);
+    margin: 0;
+
+    font-family: monospace;
+    color: white;
+
+    /* Got this nice dot gen from codepen: https://codepen.io/edmundojr/pen/xOYJGw */
+    --dot-bg: rgb(14, 14, 14);
+    --dot-color: rgb(20, 20, 20);
+    --dot-size: 4px;
+    --dot-space: 22px;
+      background:
+          linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          var(--dot-color);
+  }
+
+
+.centre {
+    display: block;
+    height: 85vh;
+    width: auto;
+}
+  
+.project-box{
+    width: 68%;
+    padding: 4vh;
+
+    background: rgba(255, 165, 226, 0.041);
+    border-radius: 2vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.2px);
+    border: 1px solid rgba(255, 235, 249, 0.377);
+
+    overflow: hidden;
+}
+
+.projects {
+
+    margin-top: 2%;
+    margin-left: 21%;
+    font-size: 2.0vh;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+
+}
+
+.auto-resizable-iframe iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+.sperator {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.hero {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.hero-text {
+    position: absolute;
+    top:0;
+    left:0;
+
+    margin: 4%;
+    font-size: 2.75vh;
+}
+
+.layer1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.layer2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+.layer3{
+    display: block;
+    height: 85vh;
+    width: auto;
+    position: absolute;
+    image-rendering:crisp-edges;
+    scale: 50%;
+
+    font-family: monospace;
+    font-size: large;
+    color: white;
+
+    animation: tab_blur_in 3s forwards ;
+}
+@keyframes tab_blur_in {
+    from { backdrop-filter: blur(2px); }
+    to { backdrop-filter: blur(5px); }
+}
+
+
+.clouds {
+    position: absolute;
+    width: 100%; 
+    height: 85vh;
+    top:0;
+    left:0;
+    background-size: 120%;
+    background-position-y: 30%;
+    background-image: url('content/clouds.png');
+    background-repeat: repeat-x; 
+    overflow-x: hidden;
+    image-rendering: crisp-edges;
+    background-image: url('content/clouds.png');
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+} 
+@keyframes cloud_scroll {
+    from { background-position-x: 0; }
+    to { background-position-x: -96000px; }
+}
